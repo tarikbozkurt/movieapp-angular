@@ -4,5 +4,5 @@ export interface Movie {
     description: string;
     imgUrl: string;
     isPopular: boolean;
-
+    datePublished: Date;
 }

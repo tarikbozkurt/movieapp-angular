@@ -1,0 +1,35 @@
+<h4>lower-upper-title pipe</h4>
+<p>{{ 'Samsung S20' }}</p>
+<p>{{ 'Samsung S20' | lowercase }}</p>
+<p>{{ 'Samsung S20' | uppercase }}</p>
+<p>{{ 'Samsung S20' | titlecase }}</p>
+
+<br><br>
+
+<h4>Date Pipe</h4>
+<p>{{ today }}</p>
+<p>{{ today | date:'short' }}</p>
+<p>{{ today | date}}</p>
+<p>{{ today | date:'fullDate'}}</p>
+<p>{{ today | date:'shortTime'}}</p>
+<p>{{ today | date:'h:mm:ss'}}</p>
+
+<br><br>
+
+<h4>Decimal Pipe</h4>
+<p>{{ 2.23456343 | number }}</p>
+<p>{{ 2.23456343 | number:'1 .8' }}</p>
+<p>{{ 2.23456343 | number:'4.1-8' }}</p>
+
+
+<h4>Currency Pipe</h4>
+<p>{{ 3950| currency }}</p>
+<p>{{ 3950| currency:'EUR' }}</p>
+<p>{{ 3950| currency:'TRY' }}</p>
+
+
+<h4>Percent Pipe</h4>
+<p>{{ 0.259| percent }}</p>
+<p>{{ 0.0259| percent }}</p>
+<p>{{ 1.26 | percent:'2.2-4' }}</p>
+<p>{{ 3/4| percent:'2.2-4'}}</p>

@@ -7,10 +7,10 @@ export class MovieRepository {
     constructor() {
         this.movies = [
 
-            { id: 2, title: "film 2", description: "film 2 açıklama", imgUrl: "2.jpeg", isPopular: true },
-            { id: 3, title: "film 3", description: "film 3 açıklama", imgUrl: "3.jpeg", isPopular: false },
-            { id: 4, title: "film 4", description: "film 4 açıklama", imgUrl: "4.jpeg", isPopular: true },
-            { id: 5, title: "film 5", description: "film 4-2 açıklama", imgUrl: "4.jpeg", isPopular: true }
+            { id: 2, title: "film 2", description: "Deneme Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sint. Tempore qui vero tempora, assumenda, voluptates ullam ab eos aperiam minus nihil labore repellendus amet modi esse veniam hic cumque", imgUrl: "2.jpeg", isPopular: true, datePublished: new Date(1990, 10, 10) },
+            { id: 3, title: "film 3", description: "fLorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sint. Tempore qui vero tempora, assumenda, voluptates ullam ab eos aperiam minus nihil labore repellendus amet modi esse veniam hic cumque", imgUrl: "3.jpeg", isPopular: false, datePublished: new Date(1990, 10, 10) },
+            { id: 4, title: "film 4", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sint. Tempore qui vero tempora, assumenda, voluptates ullam ab eos aperiam minus nihil labore repellendus amet modi esse veniam hic cumque", imgUrl: "4.jpeg", isPopular: true, datePublished: new Date(1990, 10, 10) },
+            { id: 5, title: "film 5", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, sint. Tempore qui vero tempora, assumenda, voluptates ullam ab eos aperiam minus nihil labore repellendus amet modi esse veniam hic cumque", imgUrl: "4.jpeg", isPopular: true, datePublished: new Date(1990, 10, 10) }
         ]
     }
 
@@ -28,5 +28,7 @@ export class MovieRepository {
     getMovieById(id: number): Movie {
         return this.movies.find(i => i.id == id);
     }
+
+
 
 }

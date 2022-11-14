@@ -8,6 +8,9 @@ import { MoviesComponent } from './movies/movies.component';
 import { MovieComponent } from './movies/movie/movie.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { FooterComponent } from './footer/footer.component';
+import { SummaryPipe } from './pipes/summary.pipe';
+import { FormsModule } from '@angular/forms';
+import { MovieFilter } from './pipes/movieFilter.pipe';
 
 @NgModule({
   declarations: [ //componentleri otomatik "">ng g c" ile ekliyor..
@@ -17,10 +20,13 @@ import { FooterComponent } from './footer/footer.component';
     MoviesComponent,
     MovieComponent,
     MovieDetailsComponent,
-    FooterComponent
+    FooterComponent,
+    SummaryPipe,
+    MovieFilter
   ],
   imports: [   // Modül, routing, form vb buradan ekliyoruz.
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],  //services 
   bootstrap: [AppComponent]  //starter component ( uygulama çalıştığı an çağırılacak)
